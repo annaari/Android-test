@@ -12,12 +12,16 @@ public class DisplayMessageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_message_activity);
+
+        TextView message = (TextView) findViewById(R.id.message);
+        TextView name = (TextView) findViewById(R.id.name);
+
         Intent intent = getIntent();
-        String message =
-                intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        TextView textView = new TextView(this);
-        textView.setText(message);
-        ViewGroup layout = findViewById(R.id.root);
-        layout.addView(textView);
+        DataActivity data = intent.getParcelableExtra("Data");
+
+        message.setText("Message" + data.getMessage());
+        name.setText("Name:" + data.getName());
+
     }
 }
+
