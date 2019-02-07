@@ -9,9 +9,6 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE =
-            "com.halcyonmobile.learning.myapplication.MESSAGE";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +19,13 @@ public class MainActivity extends AppCompatActivity {
         // Do something in response to button
         Intent intent = new Intent(this,
                 DisplayMessageActivity.class);
-        EditText editText = findViewById(R.id.message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        EditText editTextArtist = findViewById(R.id.artist);
+        EditText editTextSong = findViewById(R.id.song);
+        String artist = editTextArtist.getText().toString();
+        String song = editTextSong.getText().toString();
+
+        Music music = new Music(artist,song);
+        intent.putExtra("Music", music);
         startActivity(intent);
     }
 }
