@@ -3,27 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/bgr">
 
     <EditText
         android:id="@+id/artist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/artist"
+        android:textColorHint="@color/textColorHint"
         android:layout_gravity = "center"
-        android:layout_marginTop="80px"/>
+        android:layout_marginTop="80px"
+        android:textColor="@color/textColor"/>
 
     <EditText
         android:id="@+id/song"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/song"
-        android:layout_gravity = "center"/>
+        android:textColorHint="@color/textColorHint"
+        android:layout_gravity = "center"
+        android:textColor="@color/textColor"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_send"
         android:onClick="sendMessage"
-        android:layout_gravity = "center"/>
+        android:layout_gravity = "center"
+        android:background="#d0d8ff"/>
 </LinearLayout>

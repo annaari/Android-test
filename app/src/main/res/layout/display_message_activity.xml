@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/root"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/bgr">
     <TextView
         android:id="@+id/music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:textColor="@color/textColor" />
 
 </FrameLayout>
