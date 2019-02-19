@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/rocket_pic"
+        android:layout_width="@dimen/rocket_pic_dim"
+        android:layout_height="@dimen/rocket_pic_dim"
+        android:layout_gravity="center|top"
+        android:scaleType="centerInside"
+        android:src="@drawable/rocket"
+        android:contentDescription="Image"/>
+    <TextView
+        android:id="@+id/linear_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/hello" />
+    <EditText
+        android:id="@+id/linear_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/text"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:onClick="saveChangeLinear"
+            android:text="@string/apply_button" />
+    </LinearLayout>
+</LinearLayout>

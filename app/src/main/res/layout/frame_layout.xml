@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/frame_layout">
+
+    <ImageView
+        android:id="@+id/rocket_pic"
+        android:layout_width="@dimen/rocket_pic_dim"
+        android:layout_height="@dimen/rocket_pic_dim"
+        android:layout_gravity="center|top"
+        android:scaleType="centerInside"
+        android:src="@drawable/rocket"
+        android:contentDescription="Image"/>
+
+    <TextView
+        android:id="@+id/frame_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="155dp"
+        android:text="@string/hello" />
+    <EditText
+        android:id="@+id/frame_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="170dp"
+        android:hint="@string/text" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apply_button"
+        android:onClick="saveChangeFrame"
+        android:layout_gravity="bottom|center"
+        />
+
+</FrameLayout>

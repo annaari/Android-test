@@ -3,4 +3,12 @@
     <string name="artist">Enter an artist name</string>
     <string name="song">Enter a song by the artist</string>
     <string name="button_send">Send</string>
+    <string name="hello">Hello!</string>
+    <string name="apply_button">Apply</string>
+    <string name="frame_page">Frame</string>
+    <string name="linear_page">Linear</string>
+    <string name="contraint_page">Constrait</string>
+    <string name="text">Add new description</string>
+
+
 </resources>

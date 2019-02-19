@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE = "com.halcyonmobile.learning.myapplication.MESSAGE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -20,6 +20,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".DisplayMessageActivity"/>
+        <activity android:name=".FrameLayoutActivity"/>
+        <activity android:name=".LinearLayoutActivity"/>
+        <activity android:name=".ConstraintLayoutActivity"/>
 
     </application>
 

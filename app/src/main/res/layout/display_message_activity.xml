@@ -13,5 +13,23 @@
         android:textSize="30sp"
         android:layout_gravity="center"
         android:textColor="@color/textColor" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text = "@string/frame_page"
+        android:onClick="goToFramePage"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="@string/linear_page"
+        android:onClick="goToLinearPage"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="@string/contraint_page"
+        android:onClick="goToConstraintPage"/>
 
 </FrameLayout>
