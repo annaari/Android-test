@@ -1,36 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/bgr">
+    android:background="@color/bgr"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorButtonTaskbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
 
     <EditText
         android:id="@+id/artist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/artist"
-        android:textColorHint="@color/textColorHint"
-        android:layout_gravity = "center"
+        android:layout_gravity="center"
         android:layout_marginTop="80dp"
-        android:textColor="@color/textColor"/>
+        android:hint="@string/artist"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColorHint" />
 
     <EditText
         android:id="@+id/song"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:hint="@string/song"
-        android:textColorHint="@color/textColorHint"
-        android:layout_gravity = "center"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColorHint" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_send"
+        android:layout_gravity="center"
+        android:background="@color/colorButtonTaskbar"
         android:onClick="sendMessage"
-        android:layout_gravity = "center"
-        android:background="#af8eb5
-"/>
+        android:text="@string/button_send" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/bgr"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorButtonTaskbar"
+            android:text="@string/recycler_view"
+            android:onClick="newLayout"/>
+    </LinearLayout>
+
 </LinearLayout>
+
+

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,11 +16,12 @@ public class DisplayMessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_message_activity);
 
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setActionBar(myToolbar);
+
         Music music = getIntent().getParcelableExtra("Music");
 
         TextView textViewMusic = findViewById(R.id.music);
-
-
         textViewMusic.setText(music.getSong() + " by " + music.getArtist());
 
     }

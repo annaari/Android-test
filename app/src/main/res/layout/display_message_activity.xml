@@ -6,6 +6,13 @@
     android:id="@+id/root"
     android:orientation="vertical"
     android:background="@color/bgr">
+    <Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorButtonTaskbar"
+        android:elevation="4dp" />
+
     <TextView
         android:id="@+id/music"
         android:layout_width="wrap_content"
@@ -18,18 +25,21 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:text = "@string/frame_page"
-        android:onClick="goToFramePage"/>
+        android:onClick="goToFramePage"
+        android:background="@color/colorButtonTaskbar"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
         android:text="@string/linear_page"
-        android:onClick="goToLinearPage"/>
+        android:onClick="goToLinearPage"
+        android:background="@color/colorButtonTaskbar"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:text="@string/contraint_page"
-        android:onClick="goToConstraintPage"/>
+        android:onClick="goToConstraintPage"
+        android:background="@color/colorButtonTaskbar"/>
 
 </FrameLayout>

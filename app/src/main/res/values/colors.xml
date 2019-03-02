@@ -6,4 +6,5 @@
     <color  name="bgr">#e8eaf6</color>
     <color name="textColor">#6e78a6</color>
     <color name="textColorHint">#6e78a6</color>
+    <color name="colorButtonTaskbar">#af8eb5</color>
 </resources>

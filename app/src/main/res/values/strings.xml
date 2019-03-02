@@ -9,6 +9,11 @@
     <string name="linear_page">Linear</string>
     <string name="contraint_page">Constrait</string>
     <string name="text">Add new description</string>
-
+    <string name="action_settings">""</string>
+    <string name="import_pic">Import</string>
+    <string name="settings">Tools</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="gallery">Gallery</string>
+    <string name="recycler_view">RecyclerView</string>
 
 </resources>
