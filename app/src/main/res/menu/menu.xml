@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:actionLayout="@layout/activity_main">
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/switchId"
+        android:title="switch_design"
+        android:actionLayout="@layout/switch_design"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
