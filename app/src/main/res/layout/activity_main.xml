@@ -42,21 +42,29 @@
         android:onClick="sendMessage"
         android:text="@string/button_send" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom"
         android:background="@color/bgr"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@color/colorButtonTaskbar"
-            android:text="@string/recycler_view"
-            android:onClick="newLayout"/>
-    </LinearLayout>
+            android:onClick="newLayout"
+            android:text="@string/recycler_view" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@color/colorButtonTaskbar"
+            android:onClick="newViewPager"
+            android:text="@string/view_pager" />
+    </FrameLayout>
 
 
 </LinearLayout>

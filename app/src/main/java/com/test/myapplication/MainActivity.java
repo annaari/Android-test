@@ -98,4 +98,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void newViewPager(View view) {
+        Intent intent = new Intent(this,ViewPagerActivity.class);
+        startActivity(intent);
+    }
 }

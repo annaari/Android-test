@@ -15,5 +15,18 @@
     <string name="slideshow">Slideshow</string>
     <string name="gallery">Gallery</string>
     <string name="recycler_view">RecyclerView</string>
-
+    <string name="view_pager">ViewPager</string>
+    <string name="welcome_text1">Welcome to</string>
+    <string name="welcome_text2">Let\'s introduce you the key elements of a guitar. The metal be with you!</string>
+    <string name="pager_button">Let\'s try out</string>
+    <string name="welcome">Welcome</string>
+    <string name="body">Body</string>
+    <string name="neck">Neck</string>
+    <string name="head">Head</string>
+    <string name="neck_text1">The neck</string>
+    <string name="neck_text2">The neck basically is the section of the guitar that holds your fretboard, strings, and headstock.</string>
+    <string name="body_text1">The body</string>
+    <string name="body_text2">It\'s curvacious. It screams sexy. It\'s...a guitar. </string>
+    <string name="head_text1">The head</string>
+    <string name="head_text2">The guitar head is like a real head. Without it, your guitar is basically useless and unplayable.</string>
 </resources>

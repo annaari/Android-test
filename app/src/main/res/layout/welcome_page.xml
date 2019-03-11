@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/onboarding_image_1"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/welcome_pager_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="@dimen/pager_text1_mt"
+        android:layout_marginEnd="48dp"
+        android:text="@string/welcome_text1"
+        android:textAlignment="center"
+        android:textColor="@color/white_text"
+        android:textFontWeight="500"
+        android:textSize="@dimen/pager_text1_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/welcome_pager_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="@dimen/pager_text2_mt"
+        android:layout_marginEnd="48dp"
+        android:lineHeight="24sp"
+        android:text="@string/welcome_text2"
+        android:textAlignment="center"
+        android:textColor="@color/white_text"
+        android:textFontWeight="normal"
+        android:textSize="@dimen/pager_text2_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/pager_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_pager_text2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

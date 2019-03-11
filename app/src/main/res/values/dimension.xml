@@ -4,4 +4,16 @@
     <dimen name="rv_width">200dp</dimen>
     <dimen name="rv_heigth">150dp</dimen>
     <dimen name="rv_text_size">25sp</dimen>
+    <dimen name="pager_text1_mt">430dp</dimen>
+    <dimen name="pager_text1_mlr">48dp</dimen>
+    <dimen name="pager_text1_mb">186dp</dimen>
+    <dimen name="pager_text2_mt">462dp</dimen>
+    <dimen name="pager_text2_mlr">48dp</dimen>
+    <dimen name="pager_text2_mb">106dp</dimen>
+    <dimen name="pager_text1_size">25sp</dimen>
+    <dimen name="pager_text2_size">16sp</dimen>
+    <dimen name="pager_button_mt">590dp</dimen>
+    <dimen  name="pager_button_mlr">124dp</dimen>
+    <dimen  name="pager_button_mb">30dp</dimen>
+
 </resources>
